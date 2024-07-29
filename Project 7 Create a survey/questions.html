@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Survey - |questions|</title>
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css" />
+    <script defer src="../bootstrap4/js/all.min.js"></script>
+  </head>
+  <body class="bg-light py-3 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-4">Survey Name</h1>
+        <p class="lead">SubTitle for the Survey Name</p>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="nav" role="tablist">
+        <li class="nav-tem">
+          <a
+            href="#step-1"
+            class="nav-link h4 mb-0 active"
+            id="step-1-tab"
+            data-toggle="tab"
+            role="tab"
+            aria-controls="step-1"
+            aria-selected="true"
+            >Step 1<br />
+            <small class="d-none d-md-inline">Personal Info</small></a
+          >
+        </li>
+        <li class="nav-tem">
+          <a
+            href="#step-2"
+            class="nav-link h4 mb-0"
+            id="step-2-tab"
+            data-toggle="tab"
+            role="tab"
+            aria-controls="step-2"
+            aria-selected="false"
+            >Step 2<br />
+            <small class="d-none d-md-inline">Questions w/answers</small></a
+          >
+        </li>
+        <li class="nav-tem">
+          <a
+            href="#step-3"
+            class="nav-link h4 mb-0"
+            id="step-3-tab"
+            data-toggle="tab"
+            role="tab"
+            aria-controls="step-3"
+            aria-selected="false"
+            >Step 3<br />
+            <small class="d-none d-md-inline">Questions w/ratings</small></a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="navContent">
+        <div
+          class="tab-pane fade pt-4 show active"
+          id="step-1"
+          role="tabpanel"
+          aria-labelledby="step-1-tab"
+        >
+          <div class="form-row">
+            <div class="col-md-3 form-group">
+              <label>Sex:</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="sex"
+                    id="sex-male"
+                    value="male"
+                  />
+                  <label class="form-check-label" for="sex-male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="sex"
+                    id="sex-female"
+                    value="female"
+                  />
+                  <label class="form-check-label" for="sex-female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 form-group">
+              <label for="age">Age:</label>
+              <input type="number" class="form-control" id="age" />
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Firstname Lastname" />
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="username@domain.com"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-9 form-group">
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="1234 Grand Avenue"
+              />
+            </div>
+            <div class="col-md-3 form-group">
+              <label for="apartment">Apartment or floor:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apartment"
+                placeholder="B3, 4th Floor, or similar"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <label for="city">City:</label>
+              <input type="text" class="form-control" id="city" placeholder="City" />
+            </div>
+            <div class="col-md-2 form-group">
+              <label for="zip">Zip:</label>
+              <input type="number" class="form-control" id="zip" placeholder="1234" />
+            </div>
+            <div class="col-md-4 form-group">
+              <label for="country">Country:</label>
+              <select id="country" class="form-control">
+                <option value="" selected>- Select Country -</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Norway">Norway</option>
+                <option value="Sweden">Sweden</option>
+              </select>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg d-block ml-auto"
+            id="goto-step-2"
+          >
+            Step 2
+          </button>
+        </div>
+        <div class="tab-pane fade pt-4" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+          <h2 class="h5 text-center mb-3">
+            Question #1 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-1"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion1-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-2"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion1-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-3"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion1-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-4"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion1-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-5"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion1-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-6"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion1"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion1-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion1-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion1-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion1-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #2 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-1"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion2-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-2"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion2-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-3"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion2-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-4"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion2-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-5"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion2-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion2-6"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion2-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion2-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion2-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion2-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #3 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-1"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion3"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion3-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-2"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion2"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion3-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-3"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion3"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion3-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-4"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion3"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion3-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-5"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion3"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion3-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion3-6"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion3"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion3-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion3-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion3-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion3-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #4 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-1"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion4-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-2"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion4-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-3"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion4-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-4"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion4-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-5"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion4-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion4-6"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion4"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion4-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion4-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion4-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion4-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #5 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-1"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion5-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-2"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion5-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-3"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion5-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-4"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion5-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-5"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion5-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion5-6"
+                    class="form-check-input"
+                    type="radio"
+                    name="radioButtonQuestion5"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion5-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion5-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion5-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion5-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #6 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion6-1"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion6-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion6-2"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion6-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion1-3"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion6-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion6-4"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion6-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion6-5"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion6-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion6-6"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion6"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion6-6" class="form-check-label"
+                    ><input class="form-control form-control-sm" type=checkbox"
+                    id="radiobuttonQuestion6-other" placeholder="Other"
+                    aria-describedby="radiobuttonQuestion6-other-help" /></label
+                  >
+                  <small id="radiobuttonQuestion6-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #7 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-1"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion2-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-2"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion7-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-3"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion7-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-4"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion7-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-5"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion7-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion7-6"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion7"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion7-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion7-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion7-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion7-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #8 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-1"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion3-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-2"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion8-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-3"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion8-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-4"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion8-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-5"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion8-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion8-6"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion8"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion8-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion8-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion8-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion8-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #9 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-1"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion9"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion9-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-2"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion9"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion9-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-3"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion4"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion9-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-4"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion9"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion9-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-5"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion9"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion9-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion9-6"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion9"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion9-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion9-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion9-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion9-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="h5 text-center mb-3">
+            Question #10 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded"
+                  src="img/1600x900.png"
+                  alt="figureImage"
+                />
+                <figcaption class="figure-caption">A caption for figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-1"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion10"
+                    value="option1"
+                  />
+                  <label for="radioButtonQuestion5-1" class="form-check-label"
+                    >Answer for radio 1</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-2"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion10"
+                    value="option2"
+                  />
+                  <label for="radioButtonQuestion10-2" class="form-check-label"
+                    >Answer for radio 2</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-3"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion10"
+                    value="option3"
+                  />
+                  <label for="radioButtonQuestion10-3" class="form-check-label"
+                    >Answer for radio 3</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-4"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion10"
+                    value="option4"
+                  />
+                  <label for="radioButtonQuestion10-4" class="form-check-label"
+                    >Answer for radio 4</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-5"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion5"
+                    value="option5"
+                  />
+                  <label for="radioButtonQuestion10-5" class="form-check-label"
+                    >Answer for radio 5</label
+                  >
+                </div>
+                <div class="form-check mb-1">
+                  <input
+                    id="radioButtonQuestion10-6"
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radioButtonQuestion10"
+                    value="option6"
+                  />
+                  <label for="radioButtonQuestion10-6" class="form-check-label"
+                    ><input
+                      class="form-control form-control-sm"
+                      type="text"
+                      id="radiobuttonQuestion10-other"
+                      placeholder="Other"
+                      aria-describedby="radiobuttonQuestion10-other-help"
+                  /></label>
+                  <small id="radiobuttonQuestion10-other-help" class="form-text text-muted"
+                    >If none of the answer above is appropriate for you please write your own answer
+                    in the input field.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg d-block ml-auto"
+            id="goto-step-3"
+          >
+            Step 3
+          </button>
+        </div>
+        <div class="tab-pane fade pt-4" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #11: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-1"
+                    value="rating-1"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-1">1</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-2"
+                    value="rating-2"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-2">2</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-3"
+                    value="rating-3"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-3">3</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-4"
+                    value="rating-4"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-4">4</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-5"
+                    value="rating-5"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-5">5</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion11"
+                    id="ratingRadioQuestion11-na"
+                    value="rating-na"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-na">n/a</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingRadioQuestion11-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingRadioQuestion11-comment"
+                  name="ratingRadioQuestion11"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #12: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-1"
+                    value="rating-1"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-1">1</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-2"
+                    value="rating-2"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion12-2">2</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-3"
+                    value="rating-3"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-3">3</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-4"
+                    value="rating-4"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-4">4</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-5"
+                    value="rating-5"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion12-5">5</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion12"
+                    id="ratingRadioQuestion12-na"
+                    value="rating-na"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion12-na">n/a</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingRadioQuestion12-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingRadioQuestion11-comment"
+                  name="ratingRadioQuestion12"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #13: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-1"
+                    value="rating-1"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-1">1</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-2"
+                    value="rating-2"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-2">2</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-3"
+                    value="rating-3"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-3">3</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-4"
+                    value="rating-4"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-4">4</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-5"
+                    value="rating-5"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-5">5</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion13"
+                    id="ratingRadioQuestion13-na"
+                    value="rating-na"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion13-na">n/a</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingRadioQuestion13-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingRadioQuestion13-comment"
+                  name="ratingRadioQuestion11"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #14: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion14-1"
+                    value="rating-1"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion14-1">1</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion14-2"
+                    value="rating-2"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion14-2">2</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion14-3"
+                    value="rating-3"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion14-3">3</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion14-4"
+                    value="rating-4"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion14-4">4</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion11-5"
+                    value="rating-5"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion14-5">5</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion14"
+                    id="ratingRadioQuestion14-na"
+                    value="rating-na"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-na">n/a</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingRadioQuestion14-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingRadioQuestion14-comment"
+                  name="ratingRadioQuestion11"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #15: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-1"
+                    value="rating-1"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion15-1">1</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-2"
+                    value="rating-2"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion15-2">2</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-3"
+                    value="rating-3"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion15-3">3</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-4"
+                    value="rating-4"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion15-4">4</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-5"
+                    value="rating-5"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion15-5">5</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ratingRadioQuestion15"
+                    id="ratingRadioQuestion15-na"
+                    value="rating-na"
+                  />
+                  <label class="form-check-label" for="ratingRadioQuestion11-na">n/a</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingRadioQuestion15-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingRadioQuestion15-comment"
+                  name="ratingRadioQuestion15"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #16: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-1"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  1
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-2"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  2
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-3"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  3
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-4"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  4
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-5"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  5
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion16-na"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion16"
+                    value="rating-1"
+                  />
+                  n/a
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingButtonQuestion16-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingButtonQuestion16-comment"
+                  name="ratingButtonQuestion16"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #17: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-1"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  1
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-2"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  2
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-3"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  3
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-4"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  4
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-5"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  5
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion17-na"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion17"
+                    value="rating-1"
+                  />
+                  n/a
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingButtonQuestion17-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingButtonQuestion17-comment"
+                  name="ratingButtonQuestion17"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #18: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-1"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  1
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-2"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  2
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-3"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  3
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-4"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  4
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-5"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  5
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion18-na"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion18"
+                    value="rating-1"
+                  />
+                  n/a
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingButtonQuestion18-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingButtonQuestion18-comment"
+                  name="ratingButtonQuestion18"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #19: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-1"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  1
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-2"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  2
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-3"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  3
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-4"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  4
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-5"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  5
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion19-na"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion19"
+                    value="rating-1"
+                  />
+                  n/a
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingButtonQuestion19-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingButtonQuestion19-comment"
+                  name="ratingButtonQuestion19"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5">
+                Question #20: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </h2>
+              <p class="small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada semper
+                velit, id condimentum dui aliquet non.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-1"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  1
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-2"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  2
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-3"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  3
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-4"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  4
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-5"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  5
+                </label>
+                <label class="btn btn-outline-secondary">
+                  <input
+                    id="ratingButtonQuestion20-na"
+                    class="form-control"
+                    type="radio"
+                    name="ratingButtonQuestion20"
+                    value="rating-1"
+                  />
+                  n/a
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="ratingButtonQuestion20-comment">Comment:</label>
+                <textarea
+                  class="form-control form-control-sm"
+                  id="ratingButtonQuestion20-comment"
+                  name="ratingButtonQuestion20"
+                  rows="3"
+                  placeholder="Write a comment here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary d-block btn-lg ml-auto">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="../bootstrap4/js/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#goto-step-2").on("click", function (e) {
+          $("html,body").animate(
+            {
+              scrollTop: 0,
+            },
+            300,
+            function () {
+              $("#step-2-tab").tab("show");
+            }
+          );
+        });
+        $("#goto-step-3").on("click", function (e) {
+          $("html,body").animate(
+            {
+              scrollTop: 0,
+            },
+            300,
+            function () {
+              $("#step-3-tab").tab("show");
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Forum- create new topic</title>
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <h1><a href="0" class="navbar-brand">Forum</a></h1>
+        <form action="" class="form-inline">
+          <input type="text" class="form-control mr-3 mb-2 mb-sm-0" name="search" id="search" placeholder="search" />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container my-3">
+      <!--nav with breadcrumb-->
+      <nav class="breadcrumb">
+        <a href="#0" class="breadcrumb-item">Board Index</a>
+        <a href="#0" class="breadcrumb-item">Forum category</a>
+        <a href="#0" class="breadcrumb-item">Forum name</a>
+        <span class="breadcrumb-item active">Forum create new topic</span>
+      </nav>
+      <div class="row">
+        <div class="col-12">
+          <!--BOARD OVERVIEW-->
+          <h2 class="h4 text-white bg-info mb-3 p-4 rounded">Create new topic</h2>
+          <form action="#" class="mb-3">
+            <div class="form-group">
+              <label for="topic">Topic:</label>
+              <input type="text" class="form-control" name="topic" id="topic" placeholder="give your topic a title" required />
+            </div>
+            <div class="form-group">
+              <label for="commement">Comment:</label>
+              <textarea class="form-control" name="commement" id="commement" cols="30" rows="10" placeholder="write your comment here" required></textarea>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"> <input type="checkbox" class="form-check-label" name="checkbox" id="checkbox" value="notification" /> Notify me upon replies </label>
+            </div>
+            <button type="submit" class="btn btn-primary">create topic</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer class="small bg-dark text-white">
+      <div class="container py-4">
+        <ul class="list inline mb-0 text-center">
+          <li class="list-inline-item">&copy;2020 Web Company, Inc.</li>
+          <li class="list-inline-item">All rights reserved.</li>
+          <li class="list-inline-item"><a href="#0">Terms of use and policy</a>.</li>
+        </ul>
+      </div>
+    </footer>
+    <!--jquery first then bootstrap-->
+    <script src="../bootstrap4/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap4/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
